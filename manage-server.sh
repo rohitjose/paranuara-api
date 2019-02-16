@@ -2,6 +2,7 @@
 
 if [ "$1" = "loadnrun" ]
 then
+    docker volume create mongodb_data_volume
     docker-compose up -d
     sleep 3
     mongoimport --host localhost --port 27018 \
@@ -22,7 +23,7 @@ then
     docker-compose run --rm app sh -c 'python manage.py test && flake8'
 elif [ "$1" = "startapp" ]
 then
-    docker-compose run --rm app sh -c 'python manage.py startapp $2'
+    docker-compose run --rm app sh -c "python manage.py startapp $2"
 elif [ "$1" = "run" ]
 then
     docker-compose up -d

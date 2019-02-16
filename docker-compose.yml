@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 
 services:
  app:
@@ -21,9 +21,14 @@ services:
    image: mongo:3.4-jessie
    restart: always
    volumes:
-    - "data:/data/db"
+    - type: volume
+      source: mongodb_data_volume
+      target: /data/db
    ports:
     - "27018:27017"
    environment:
       MONGO_INITDB_ROOT_USERNAME: mongouser
       MONGO_INITDB_ROOT_PASSWORD: supersecretpassword
+volumes:
+  mongodb_data_volume:
+    external: true
