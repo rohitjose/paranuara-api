@@ -1,10 +1,11 @@
+import json
 from mongoengine import (
     connection,
     connect)
 from django.test import TestCase
 from app.settings import MONGO_TEST
 
-from core.models import Company
+from core.models import Company, Person
 
 
 class MongoTestCase(TestCase):
@@ -37,3 +38,11 @@ class ModelTests(MongoTestCase):
         )
         company.save()
         assert Company.objects.first().company == company.company
+
+    def test_people_str(self):
+        """Tests the validity of the people model"""
+        with open("core/tests/test_data/person.json") as person_json:
+            person = json.load(person_json)
+            person_obj = Person(**person)
+            person_obj.save()
+            assert Person.objects.first().name == person['name']
