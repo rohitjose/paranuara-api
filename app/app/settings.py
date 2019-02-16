@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import mongoengine
+from mongoengine import connect
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
+    'core',
+    'company',
 ]
 
 MIDDLEWARE = [
@@ -73,13 +76,28 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
-mongoengine.connect(
+
+connect(
     db=os.environ.get('DB_NAME'),
     username=os.environ.get('DB_USER'),
-    password= os.environ.get('DB_PASS'),
-    host=os.environ.get('DB_HOST')
+    password=os.environ.get('DB_PASS'),
+    host=os.environ.get('DB_HOST'),
+    authentication_source='admin'
 )
+
+MONGO_TEST ={
+    'host': os.environ.get('DB_HOST'),
+    'db': "_".join([os.environ.get('DB_NAME'), "test"]),
+    'username':os.environ.get('DB_USER'),
+    'password':os.environ.get('DB_PASS')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -118,3 +136,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Graphene Config
+GRAPHENE = {
+    'SCHEMA': 'app.schema.schema',
+}
