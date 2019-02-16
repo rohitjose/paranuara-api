@@ -1,6 +1,8 @@
 FROM python:3.7-alpine
 LABEL maintainer="rohitjose@gmail.com"
 
+RUN apk add --no-cache build-base libffi-dev libressl-dev linux-headers
+
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
