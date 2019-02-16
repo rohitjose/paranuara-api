@@ -2,7 +2,7 @@
 
 if [ "$1" = "loadnrun" ]
 then
-    docker volume create mongodb_data_volume
+    docker volume create --name=mongodb_data_volume
     docker-compose up -d
     sleep 3
     mongoimport --host localhost --port 27018 \
