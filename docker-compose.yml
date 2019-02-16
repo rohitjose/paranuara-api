@@ -20,6 +20,8 @@ services:
  db:
    image: mongo:3.4-jessie
    restart: always
+   volumes:
+    - "data:/data/db"
    ports:
     - "27018:27017"
    environment:
