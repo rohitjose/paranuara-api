@@ -1,7 +1,16 @@
 import graphene
 
-from core.models import Person
+from core.models import Person, Food
 from company.schema import PersonType
+
+
+class FavouriteFoodType(graphene.ObjectType):
+    """Graphene object type to return the
+       favourite food of a person"""
+    username = graphene.String()
+    age = graphene.Int()
+    fruits = graphene.List(graphene.String)
+    vegetables = graphene.List(graphene.String)
 
 
 class Query(graphene.ObjectType):
@@ -9,6 +18,7 @@ class Query(graphene.ObjectType):
     common_friends = graphene.List(PersonType,
                                    args={'id':
                                          graphene.List(graphene.Int)})
+    favourite_food = graphene.Field(FavouriteFoodType, id=graphene.Int())
 
     def resolve_people(self, info, **kwargs):
         """API resolves to retrieve all Person info"""
@@ -41,3 +51,26 @@ class Query(graphene.ObjectType):
             if friends.count() > 0:
                 return friends
         raise Exception('No common friends found')
+
+    def resolve_favourite_food(self, info, id, **kwargs):
+        """API resolver to find the favourite food of a person"""
+        # Lookup person using id
+        try:
+            person = Person.objects.get(index=id)
+        except Person.DoesNotExist:
+            raise Exception('Person index not found')
+
+        # Retrieve the favourite food of the person
+        favourite_food_list = \
+            Food.objects.filter(name__in=person['favouriteFood'])
+
+        return FavouriteFoodType(
+            username=person['name'],
+            age=person['age'],
+            fruits=[food.name for food in
+                    favourite_food_list
+                    if food.group == 'fruit'],
+            vegetables=[food.name for food in
+                        favourite_food_list
+                        if food.group == 'vegetable']
+        )
