@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" = "loadnrun" ]
+if [ "$1" = "loadandrun" ]
 then
     docker volume create --name=mongodb_data_volume
     docker-compose up -d

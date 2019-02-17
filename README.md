@@ -7,14 +7,14 @@ This project has the following dependencies:
 - docker-compose
 - MongoDB (This is specifically to support the import of data to the DB using the mongoimport command)
 
-## Installing
+## Installation
 
 ### Load the database and run the project
 
 The following command sets up the project to run the docker files and loads the database with the data in the resources folder.
 
 ```bash
-sh manage-server.sh loadnrun
+sh manage-server.sh loadandrun
 ```
 
 You can replace the files in the resources folder to import a different data set.
@@ -50,7 +50,7 @@ The API can perform a lookup either based on the company's index or the name. It
 - lookup - Can have a value of 'id' or 'name' and denotes the lookup operation to be performed by the API
 - value - The value for the lookup
 
-##### Sample request
+#### Sample request
 
 **Lookup by id**
 
@@ -85,7 +85,7 @@ The API accepts a list of index values of the people and returns list of their f
 - eyeColor - Accepts a string input and filters based on the eye colour provided.
 - hasDied - Accepts a boolean input.
 
-##### Sample request
+#### Sample request
 
 **For the specified requirement**
 
@@ -122,7 +122,7 @@ The API accepts a list of index values of the people and returns list of their f
 
 The API accepts the person's index value as arguments and returns the favorite food.
 
-##### Sample request
+#### Sample request
 
 ```js
 {
