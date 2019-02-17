@@ -17,27 +17,35 @@ class Query(graphene.ObjectType):
     people = graphene.List(PersonType)
     common_friends = graphene.List(PersonType,
                                    args={'id':
-                                         graphene.List(graphene.Int)})
+                                         graphene.List(graphene.Int),
+                                         'eyeColor':
+                                         graphene.String(),
+                                         'has_died':
+                                         graphene.Boolean()
+                                         })
     favourite_food = graphene.Field(FavouriteFoodType, id=graphene.Int())
 
     def resolve_people(self, info, **kwargs):
         """API resolves to retrieve all Person info"""
         return Person.objects.all()
 
-    def resolve_common_friends(self, info, id, **kwargs):
+    def resolve_common_friends(self, info, id,
+                               eyeColor="brown", has_died=False, **kwargs):
         """API resolver to find commond friends from multiple people"""
         # Check if input has two indices for lookup
         if len(id) < 2:
             raise Exception('Lookup needs atleast two index values')
 
         common_friends = set()
+        initialize_common_friends = True
         for person in Person.objects.filter(index__in=id):
             current_friends = set([friend.index for
                                    friend in person['friends']])
-            if len(common_friends) == 0:
+            if len(common_friends) == 0 and initialize_common_friends:
                 common_friends = current_friends
+                initialize_common_friends = False
             else:
-                common_friends.intersection(current_friends)
+                common_friends = common_friends.intersection(current_friends)
 
         # Removes the lookup ids from list of common friends
         for id_value in id:
@@ -46,8 +54,8 @@ class Query(graphene.ObjectType):
 
         if len(common_friends) > 0:
             friends = Person.objects.filter(index__in=list(common_friends),
-                                            eyeColor='brown',
-                                            has_died=False)
+                                            eyeColor=eyeColor,
+                                            has_died=has_died)
             if friends.count() > 0:
                 return friends
         raise Exception('No common friends found')
