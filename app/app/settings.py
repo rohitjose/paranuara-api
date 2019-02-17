@@ -83,23 +83,20 @@ DATABASES = {
     }
 }
 
-
-connect(
-    db=os.environ.get('DB_NAME'),
-    username=os.environ.get('DB_USER'),
-    password=os.environ.get('DB_PASS'),
-    host=os.environ.get('DB_HOST'),
-    authentication_source='admin'
-)
-
-MONGO_TEST ={
+if os.environ.get('DB') != 'TEST':
+    connect(
+        db=os.environ.get('DB_NAME'),
+        username=os.environ.get('DB_USER'),
+        password=os.environ.get('DB_PASS'),
+        host=os.environ.get('DB_HOST'),
+        authentication_source='admin'
+    )
+MONGO_TEST = {
     'host': os.environ.get('DB_HOST'),
     'db': "_".join([os.environ.get('DB_NAME'), "test"]),
-    'username':os.environ.get('DB_USER'),
-    'password':os.environ.get('DB_PASS')
-}
-
-# Password validation
+    'username': os.environ.get('DB_USER'),
+    'password': os.environ.get('DB_PASS')
+}# Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [

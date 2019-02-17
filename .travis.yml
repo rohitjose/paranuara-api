@@ -9,4 +9,4 @@ before_script: pip install docker-compose
 
 script:
   - docker volume create --name=mongodb_data_volume
-  - docker-compose run --rm app sh -c "python manage.py test && flake8"
+  - docker-compose run --rm -e DB=TEST app sh -c 'python manage.py test && flake8'

@@ -20,7 +20,7 @@ then
     echo "--- API Server ready to accept connections ---"
 elif [ "$1" = "test" ]
 then
-    docker-compose run --rm app sh -c 'python manage.py test && flake8'
+    docker-compose run --rm -e DB=TEST app sh -c 'python manage.py test && flake8'
 elif [ "$1" = "startapp" ]
 then
     docker-compose run --rm app sh -c "python manage.py startapp $2"

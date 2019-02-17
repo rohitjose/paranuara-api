@@ -1,30 +1,25 @@
 import json
-from mongoengine import (
-    connection,
-    connect)
+from mongoengine import connect
 from django.test import TestCase
-from app.settings import MONGO_TEST
 
 from core.models import Company, Person
+from app.settings import MONGO_TEST
 
 
 class MongoTestCase(TestCase):
     def setUp(self):
-        connection.disconnect()
-        connect(
+        self.db = connect(
             host=MONGO_TEST['host'],
             db=MONGO_TEST['db'],
             username=MONGO_TEST['username'],
             password=MONGO_TEST['password'],
             authentication_source='admin'
-           )
+        )
         super().setUpClass()
 
     def tearDown(self):
-        from mongoengine.connection import get_connection, disconnect
-        connection = get_connection()
-        connection.drop_database(MONGO_TEST['db'])
-        disconnect()
+        self.db.drop_database(MONGO_TEST['db'])
+        self.db.close()
         super().tearDownClass()
 
 
@@ -33,11 +28,11 @@ class ModelTests(MongoTestCase):
     def test_company_str(self):
         """Tests the company string representation"""
         company = Company(
-            index=10,
+            index=11,
             company='ACME Inc'
         )
         company.save()
-        assert Company.objects.first().company == company.company
+        assert Company.objects.get(index=11).company == company.company
 
     def test_people_str(self):
         """Tests the validity of the people model"""
@@ -45,4 +40,5 @@ class ModelTests(MongoTestCase):
             person = json.load(person_json)
             person_obj = Person(**person)
             person_obj.save()
-            assert Person.objects.first().name == person['name']
+            assert Person.objects.get(
+                index=person['index']).name == person['name']
