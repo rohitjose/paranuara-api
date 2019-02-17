@@ -2,7 +2,7 @@ import json
 from graphene.test import Client
 
 from app.schema import schema
-from core.models import Person
+from core.models import Person, Food
 from core.tests.test_models import MongoTestCase
 
 
@@ -12,12 +12,20 @@ class CompanyApiTests(MongoTestCase):
     def setUp(self):
         super().setUp()
         self.client = Client(schema)
+
         # Populate the test collectiom with person data
-        with open("core/tests/test_data/people.json") as employee_json:
-            employees = json.load(employee_json)
-            for employee in employees:
-                employee_obj = Person(**employee)
-                employee_obj.save()
+        with open("core/tests/test_data/people.json") as people_json:
+            peoples = json.load(people_json)
+            for people in peoples:
+                people_obj = Person(**people)
+                people_obj.save()
+
+        # Populate the food collection from test data file
+        with open("core/tests/test_data/food.json") as food_json:
+            food_list = json.load(food_json)
+            for food in food_list:
+                food_obj = Food(**food)
+                food_obj.save()
 
     def test_common_friends_invalid_input(self):
         """Tests if the API returns an error when the
@@ -76,3 +84,43 @@ class CompanyApiTests(MongoTestCase):
                                    for friend in
                                    response['data']['commonFriends']]
         self.assertTrue(valid_common_friends == response_common_friends)
+
+    def test_favourite_food_invalid_id(self):
+        """Tests if API returns an error for an invalid
+           person index value"""
+        response = self.client.execute('''
+                        {
+                            favouriteFood(id: 10001){
+                                username,
+                                age,
+                                fruits,
+                                vegetables
+                            }
+                        }''')
+        self.assertEqual(response["errors"][0]["message"],
+                         "Person index not found")
+
+    def test_favourite_food_valid(self):
+        """Tests if the API returns a valid response
+            for a valid person index"""
+        valid_veggies = ["celery", "carrot"]
+        valid_fruits = ["apple", "orange"]
+        name = "Rosemary Hayes"
+        age = 30
+        response = self.client.execute('''
+                        {
+                            favouriteFood(id: 3){
+                                username,
+                                age,
+                                fruits,
+                                vegetables
+                            }
+                        }''')
+        favouriteFood = response['data']['favouriteFood']
+
+        self.assertTrue(
+            favouriteFood['vegetables'] == valid_veggies and
+            favouriteFood['fruits'] == valid_fruits and
+            favouriteFood['username'] == name and
+            favouriteFood['age'] == age
+        )
