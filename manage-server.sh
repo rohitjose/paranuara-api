@@ -27,4 +27,7 @@ then
 elif [ "$1" = "run" ]
 then
     docker-compose up -d
+elif [ "$1" = "down" ]
+then
+    docker-compose down
 fi
