@@ -54,7 +54,7 @@ The API can perform a lookup either based on the company's index or the name. It
 
 **Lookup by id**
 
-```json
+```js
 {
   employees(lookup: "id", value: "10") {
     name,
@@ -66,7 +66,7 @@ The API can perform a lookup either based on the company's index or the name. It
 
 **Lookup by name**
 
-```json
+```js
 {
   employees(lookup: "name", value: "TECHTRIX") {
     name
@@ -89,7 +89,7 @@ The API accepts a list of index values of the people and returns list of their f
 
 **For the specified requirement**
 
-```json
+```js
 {
   commonFriends(id: [30,50]) {
     name,
@@ -103,7 +103,7 @@ The API accepts a list of index values of the people and returns list of their f
 
 **With additional arguments**
 
-```json
+```js
 {
   commonFriends(id: [30,50,300,500], eyeColor:"blue", hasDied: true) {
     name,
@@ -124,7 +124,7 @@ The API accepts the person's index value as arguments and returns the favorite f
 
 ##### Sample request
 
-```json
+```js
 {
   favouriteFood(id:10){
     username,
