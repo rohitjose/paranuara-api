@@ -47,3 +47,10 @@ class Person(Document):
     friends = EmbeddedDocumentListField(Friend)
     greeting = StringField()
     favouriteFood = ListField(StringField())
+
+
+class Food(Document):
+    """Model holds the categorized food types"""
+    meta = {'collection': 'food'}
+    name = StringField(required=True)
+    group = StringField(required=True, choices=['fruit', 'vegetable'])

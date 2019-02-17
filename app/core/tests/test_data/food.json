@@ -1,0 +1,34 @@
+[
+    {
+        "name": "apple",
+        "group": "fruit"
+    },
+    {
+        "name": "celery",
+        "group": "vegetable"
+    },
+    {
+        "name": "orange",
+        "group": "fruit"
+    },
+    {
+        "name": "banana",
+        "group": "fruit"
+    },
+    {
+        "name": "beetroot",
+        "group": "vegetable"
+    },
+    {
+        "name": "cucumber",
+        "group": "vegetable"
+    },
+    {
+        "name": "strawberry",
+        "group": "fruit"
+    },
+    {
+        "name": "carrot",
+        "group": "vegetable"
+    }
+]

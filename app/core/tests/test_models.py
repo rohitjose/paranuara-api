@@ -2,7 +2,7 @@ import json
 from mongoengine import connect
 from django.test import TestCase
 
-from core.models import Company, Person
+from core.models import Company, Person, Food
 from app.settings import MONGO_TEST
 
 
@@ -42,3 +42,12 @@ class ModelTests(MongoTestCase):
             person_obj.save()
             assert Person.objects.get(
                 index=person['index']).name == person['name']
+
+    def test_food_str(self):
+        """Tests the validity of the food model"""
+        with open("core/tests/test_data/food.json") as food_json:
+            food = json.load(food_json)[0]
+            food_obj = Food(**food)
+            food_obj.save()
+            assert Food.objects.get(
+                name=food['name']).name == food['name']

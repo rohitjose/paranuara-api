@@ -1,994 +1,994 @@
 [
     {
         "name": "acai",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "apple",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "akee",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "apricot",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "avocado",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "banana",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "bilberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "blackberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "blackcurrant",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "black sapote",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "blueberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "boysenberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "buddha's hand",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "crab apples",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "currant",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "cherry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "cherimoya",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "chico fruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "cloudberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "coconut",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "cranberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "damson",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "date",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "dragonfruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "pitaya",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "durian",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "elderberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "feijoa",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "fig",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "goji berry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "gooseberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "grape",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "raisin",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "grapefruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "guava",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "honeyberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "huckleberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "jabuticaba",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "jackfruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "jambul",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "japanese plum",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "jostaberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "jujube",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "juniper berry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "kiwano",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "kiwifruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "kumquat",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "lemon",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "lime",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "loquat",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "longan",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "lychee",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "mango",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "mangosteen",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "marionberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "melon",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "cantaloupe",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "honeydew",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "watermelon",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "miracle fruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "mulberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "nectarine",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "nance",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "olive",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "orange",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "blood orange",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "clementine",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "mandarine",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "tangerine",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "papaya",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "passionfruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "peach",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "pear",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "persimmon",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "plantain",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "plum",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "prune",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "pineapple",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "pineberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "plumcot",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "pomegranate",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "pomelo",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "purple mangosteen",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "quince",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "raspberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "salmonberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "rambutan",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "redcurrant",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "salal",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "salak",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "satsuma",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "soursop",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "star apple",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "star fruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "strawberry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "surinam cherry",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "tamarillo",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "tamarind",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "ugli fruit",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "white currant",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "white sapote",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "yuzu",
-        "type": "fruit"
+        "group": "fruit"
     },
     {
         "name": "artichoke",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "aubergine",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"eggplant",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "asparagus",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "legumes",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "alfalfa",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "azuki beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"adzuki",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "bean sprouts",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "black beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "black-eyed peas",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "borlotti bean",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "broad beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "chickpeas",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"garbanzos",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name":"ceci beans",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "green beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "kidney beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "lentils",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "lima beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"butter bean",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "mung beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "navy beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "pinto beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "runner beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "split peas",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "soy beans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "peas",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "mangetout",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "snap peas",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "broccoflower",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "broccoli",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"calabrese",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "brussels sprouts",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "cabbage",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "kohlrabi",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "cauliflower",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "celery",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "endive",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "fiddleheads",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "frisee",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "fennel",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "beet greens",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "bok choy",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "chard",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "collard greens",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "kale",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "mustard greens",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "spinach",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "herbs",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "anise",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "basil",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "caraway",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "cilantro",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "coriander",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "chamomile",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "dill",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "fennel",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "lavender",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "lemon grass",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "marjoram",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "oregano",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "parsley",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "rosemary",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "sage",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "thyme",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "lettuce",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "arugula",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "mushrooms",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "nettles",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "new zealand spinach",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "okra",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"onions",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "chives",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "garlic",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "leek",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "onion",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "shallot",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "scallion",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"spring onion",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name":"green onion",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "parsley",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "peppers",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "ell pepper",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "chili pepper",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "jalapeño",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "habanero",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "paprika",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "tabasco pepper",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "cayenne pepper",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "radicchio",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "rhubarb",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "root vegetables",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "beetroot",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "beet",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "mangel-wurzel",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "carrot",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "celeriac",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "corms",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "eddoe",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "konjac",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "taro",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "water chestnut",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "ginger",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "parsnip",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "rutabaga",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "radish",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "wasabi",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "horseradish",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "white radish",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "daikon",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "tubers",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "jicama",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "jerusalem artichoke",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "potato",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "sunchokes",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "sweet potato",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "yam",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "turnip",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "salsify",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name":"oyster plant",
-        "type":"vegetable"
+        "group":"vegetable"
     },
     {
         "name": "skirret",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "sweetcorn",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "topinambur",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "squashes",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "acorn squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "bitter melon",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "butternut squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "banana squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "courgette",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "zucchini",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "cucumber",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "delicata",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "gem squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "hubbard squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "marrow",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "patty pans",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "pumpkin",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "spaghetti squash",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "tat soi",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "tomato",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "watercress",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "corn",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "bell pepper",
-        "type": "vegetable"
+        "group": "vegetable"
     },
     {
         "name": "brinjal",
-        "type": "vegetable"
+        "group": "vegetable"
     }
 ]
