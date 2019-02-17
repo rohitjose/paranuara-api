@@ -35,6 +35,9 @@ class Query(graphene.ObjectType):
                 common_friends.remove(id_value)
 
         if len(common_friends) > 0:
-            return Person.objects.filter(index__in=list(common_friends))
-        else:
-            raise Exception('No common friends found')
+            friends = Person.objects.filter(index__in=list(common_friends),
+                                            eyeColor='brown',
+                                            has_died=False)
+            if friends.count() > 0:
+                return friends
+        raise Exception('No common friends found')
